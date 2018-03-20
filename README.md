@@ -1,2 +1,2 @@
 # SocialUtilsHelper
-Android library for social events like share &amp; rate
+Small Android library for social events, provide quick functions like Rate App & share App.
