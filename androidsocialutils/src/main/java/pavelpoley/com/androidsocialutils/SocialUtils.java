@@ -16,29 +16,48 @@ public class SocialUtils {
 
     private static final String GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=";
 
+
+
     public static void shareApp(@NonNull Context context, String text){
 
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
 
-        if (text == null || text.isEmpty()){
+        if (text != null){
 
-            sendIntent.putExtra(Intent.EXTRA_TEXT,
-                    "Hey check out this app at: "
-                            + GOOGLE_PLAY_URL
-                            + context.getPackageName());
-
-        }else {
             sendIntent.putExtra(Intent.EXTRA_TEXT,
                     text
                             +" "
                             +GOOGLE_PLAY_URL
                             +context.getPackageName());
+
+        }else {
+            shareApp(context);
+            return;
         }
 
         sendIntent.setType("text/plain");
         context.startActivity(sendIntent);
     }
+
+
+
+
+    public static void shareApp(@NonNull Context context){
+
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+
+        sendIntent.putExtra(Intent.EXTRA_TEXT,
+                    "Hey check out this app at: "
+                            + GOOGLE_PLAY_URL
+                            + context.getPackageName());
+
+        sendIntent.setType("text/plain");
+        context.startActivity(sendIntent);
+    }
+
+
 
 
     public static void rateApp(Context context){
