@@ -17,6 +17,11 @@ public class SocialUtils {
     private static final String GOOGLE_PLAY_URL = "https://play.google.com/store/apps/details?id=";
 
 
+    /**
+     * Share app
+     * @param context the context
+     * @param text text to attach to the shared link
+     * */
 
     public static void shareApp(@NonNull Context context, String text){
 
@@ -42,6 +47,10 @@ public class SocialUtils {
 
 
 
+    /**
+     * Share app
+     * @param context the context
+     * */
 
     public static void shareApp(@NonNull Context context){
 
@@ -59,6 +68,10 @@ public class SocialUtils {
 
 
 
+    /**
+     * Rate app open Google play store, if the store not installed it will be opened in browser
+     * @param context the context
+     * */
 
     public static void rateApp(Context context){
 
@@ -70,5 +83,23 @@ public class SocialUtils {
             context.startActivity(new Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://play.google.com/store/apps/details?id=" + context.getPackageName())));
         }
+    }
+
+
+    /**
+     * Send Email
+     * @param context the context
+     * @param mailTo the receiver
+     * @param subject subject message that will appear in Email dialog
+     * */
+
+    public static void sendEmail(@NonNull Context context,@NonNull String mailTo,@NonNull String subject){
+
+        Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                "mailto", mailTo, null));
+
+        intent.putExtra(Intent.EXTRA_SUBJECT, subject);
+
+        context.startActivity(Intent.createChooser(intent, "Send email..."));
     }
 }
