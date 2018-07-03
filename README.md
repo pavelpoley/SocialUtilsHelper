@@ -8,7 +8,7 @@ Small Android library for social events, provide quick functions like Rate App, 
     SocialUtils.rateApp(this);
 
 ### Send Email
-    SocialUtils.sendEmail(this,"pavelpoley88@gmail.com","Feedback");
+    SocialUtils.sendEmail(this,"your_email@gmail.com","Feedback");
     
     
     
