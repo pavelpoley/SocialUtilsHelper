@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
             SocialUtils.sendEmail(this,"pavelpoley88@gmail.com","Feedback");
+        } else if (id == R.id.nav_sms) {
+            SocialUtils.sendSMS(this,"Hi! I am using this App");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
