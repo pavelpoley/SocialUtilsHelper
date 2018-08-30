@@ -102,4 +102,36 @@ public class SocialUtils {
 
         context.startActivity(Intent.createChooser(intent, "Send email..."));
     }
+
+
+    /**
+     * Send SMS
+     * @param context the context
+     * @param message message that will intend to be sent as sms body
+     * */
+
+    public static void sendSMS(@NonNull Context context,@NonNull String message)
+    {
+        Intent smsIntent = new Intent(android.content.Intent.ACTION_VIEW);
+        smsIntent.setType("vnd.android-dir/mms-sms");
+        smsIntent.putExtra("address","");
+        smsIntent.putExtra("sms_body",message);
+        context.startActivity(smsIntent);
+    }
+
+    /**
+     * Send SMS
+     * @param context the context
+     * @param number number of the recipient
+     * @param message message that will intend to be sent as sms body
+     * */
+
+    public static void sendSMS(@NonNull Context context,@NonNull String number,@NonNull String message)
+    {
+        Intent smsIntent = new Intent(android.content.Intent.ACTION_VIEW);
+        smsIntent.setType("vnd.android-dir/mms-sms");
+        smsIntent.putExtra("address",number);
+        smsIntent.putExtra("sms_body",message);
+        context.startActivity(smsIntent);
+    }
 }

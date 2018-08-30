@@ -35,6 +35,10 @@
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Email" />
+            <item
+                android:id="@+id/nav_sms"
+                android:icon="@drawable/ic_menu_sms"
+                android:title="SMS" />
         </menu>
     </item>
 
