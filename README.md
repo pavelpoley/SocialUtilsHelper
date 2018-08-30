@@ -10,6 +10,9 @@ Small Android library for social events, provide quick functions like Rate App, 
 ### Send Email
     SocialUtils.sendEmail(this,"your_email@gmail.com","Feedback");
     
+### Send SMS    
+    SocialUtils.sendSMS(this,"NUMBER","BODY");
+    
     
     
 ## How to use this library?
