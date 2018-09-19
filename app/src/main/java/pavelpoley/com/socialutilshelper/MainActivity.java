@@ -64,8 +64,12 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_send) {
             SocialUtils.sendEmail(this,"pavelpoley88@gmail.com","Feedback");
+
         } else if (id == R.id.nav_sms) {
             SocialUtils.sendSMS(this,"Hi! I am using this App");
+
+        }else if (id == R.id.nav_like_fb_page) {
+            SocialUtils.likeFacebookPage(this,"fb://page/943105079208605");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

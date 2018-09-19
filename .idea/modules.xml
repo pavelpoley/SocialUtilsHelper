@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SocialUtilsHelper.iml" filepath="$PROJECT_DIR$/.idea/SocialUtilsHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/SocialUtilsHelper.iml" filepath="$PROJECT_DIR$/SocialUtilsHelper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/SocialUtilsHelper.iml" filepath="$PROJECT_DIR$/.idea/SocialUtilsHelper.iml" />
       <module fileurl="file://$PROJECT_DIR$/androidsocialutils/androidsocialutils.iml" filepath="$PROJECT_DIR$/androidsocialutils/androidsocialutils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/androidsocialutils/androidsocialutils.iml" filepath="$PROJECT_DIR$/androidsocialutils/androidsocialutils.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -3,21 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-
-        <item
-            android:id="@+id/nav_1"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Menu Item" />
-        <item
-            android:id="@+id/nav_2"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Menu Item" />
-        <item
-            android:id="@+id/nav_3"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Menu Item" />
-    </group>
 
     <item android:title="Communicate">
         <menu>
@@ -39,6 +24,10 @@
                 android:id="@+id/nav_sms"
                 android:icon="@drawable/ic_menu_sms"
                 android:title="SMS" />
+            <item
+                android:id="@+id/nav_like_fb_page"
+                android:icon="@drawable/ic_thumb_up_black_24dp"
+                android:title="Like Facebook page" />
         </menu>
     </item>
 

@@ -134,4 +134,16 @@ public class SocialUtils {
         smsIntent.putExtra("sms_body",message);
         context.startActivity(smsIntent);
     }
+
+    /**
+     * Like Facebook page
+     * @param context the context
+     * @param id facebook page id
+     * */
+
+    public static void likeFacebookPage(Context context, String id) {
+        Intent fbIntent = new Intent(Intent.ACTION_VIEW);
+        fbIntent.setData(Uri.parse(id));
+        context.startActivity(fbIntent);
+    }
 }
