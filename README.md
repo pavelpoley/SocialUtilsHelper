@@ -29,7 +29,7 @@ Small Android library for social events, provide quick functions like Rate App, 
  + Add the dependency
 
 	   dependencies {
-	        compile 'com.github.pavelpoley:SocialUtilsHelper:1.01'
+	        compile 'com.github.pavelpoley:SocialUtilsHelper:1.02'
 	   }
     
     
