@@ -13,7 +13,8 @@ Small Android library for social events, provide quick functions like Rate App, 
 ### Send SMS    
     SocialUtils.sendSMS(this,"NUMBER","BODY");
     
-    
+### Like facebook page
+    SocialUtils.likeFacebookPage(this,"fb://page/943105079208605");
     
 ## How to use this library?
 + Add it in your root build.gradle at the end of repositories:
